@@ -42,7 +42,7 @@ const teamMembers = [
   },
   {
     position: 'Technical Head',
-    name: 'Devjoyti Mondal',
+    name: 'Devjyoti Mondal',
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/DevjoytiSir.webp",
     instagram: '@rishi_the_programmer',
     gradient: 'from-tech-orange to-tech-green'
