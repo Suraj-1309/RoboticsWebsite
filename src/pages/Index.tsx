@@ -6,6 +6,7 @@ import VisionSection from '@/components/VisionSection';
 import HighlightsSection from '@/components/HighlightsSection';
 import Footer from '@/components/Footer';
 
+
 const Index = () => {
   return (
     <div className="min-h-screen">
