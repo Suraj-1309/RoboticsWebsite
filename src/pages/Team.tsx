@@ -14,8 +14,10 @@ interface TeamMember {
   year?: string;
 }
 
+const DEFAULT_YEAR = '2023';
+
 const Team = () => {
-  const [selectedYear, setSelectedYear] = useState<string>('All');
+  const [selectedYear, setSelectedYear] = useState<string>(DEFAULT_YEAR);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
 
   // Extract unique years from data, put 'All' first
