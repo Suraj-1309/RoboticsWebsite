@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState }  from 'react';
 import { Calendar, MapPin, Clock, Users, ArrowLeft, Trophy, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
@@ -6,6 +6,44 @@ import Footer from '@/components/Footer';
 
 const upcomingEvents = [
   
+  {
+    id: 2,
+    title: 'Laser Tag 2026',
+    date: '2026-05-15',
+    time: '02:00 PM - 05:00 PM',
+    location: 'NCT Waiting Hall',
+    description: 'A high-intensity laser tag showdown where strategy, reflexes, and precision decide the ultimate champion!',
+    category: 'Competition',
+    participants: '100+ Teams',
+    image: 'https://res.cloudinary.com/dw7ck0xbj/image/upload/v1778473158/laser_tag_xcaqrb.webp',
+    gradient: 'from-accent to-tech-purple',
+    registrationLink : 'https://forms.gle/Mfp2ntQNwzprT5V57'
+  },
+  {
+    id: 3,
+    title: 'TrailBlazer 2026',
+    date: '2026-05-15',
+    time: '02:00 PM - 05:00 PM',
+    location: 'NCT 205B, B200AB',
+    description: 'A fast-paced line-following bot competition where precision, speed, and smart design lead the way to victory!',    category: 'Competition',
+    participants: '100+ Teams',
+    image: 'https://res.cloudinary.com/dw7ck0xbj/image/upload/v1778473159/trail_blazer_qk2wi8.webp',
+    gradient: 'from-accent to-tech-purple',
+    registrationLink : 'https://docs.google.com/forms/d/e/1FAIpQLSd_B6KQJKR_O1HkYLZbbD7LXRPkV3ENeX-g8LTNzxvWh1CoVA/viewform'
+  },
+  {
+    id: 1,
+    title: 'Bare Bone Bots 2026',
+    date: '2026-05-16',
+    time: '02:00 PM - 05:00 PM',
+    location: 'NCT 205B, B200AB',
+    description: 'A minimalistic bot-making competition where your creativity matters more than expensive hardware!',
+    category: 'Competition',
+    participants: '100+ Teams',
+    image: 'https://res.cloudinary.com/dw7ck0xbj/image/upload/v1778473159/bare_bone_bots_wfavuw.webp',
+    gradient: 'from-accent to-tech-purple',
+    registrationLink : 'https://docs.google.com/forms/d/e/1FAIpQLSdU-EN32Q_GzGa4hqf2yDpEBzemzWQqg_YvvI5I1dH7mEyg-w/viewform'
+  },
 ];
 
 const pastEvents = [
