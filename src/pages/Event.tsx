@@ -17,7 +17,7 @@ const upcomingEvents = [
     participants: '100+ Teams',
     image: 'https://res.cloudinary.com/dw7ck0xbj/image/upload/v1778473158/laser_tag_xcaqrb.webp',
     gradient: 'from-accent to-tech-purple',
-    registrationLink : 'https://forms.gle/Mfp2ntQNwzprT5V57'
+    registrationLink : 'https://docs.google.com/forms/d/e/1FAIpQLSfx5GyjqBTyhl5X7YXwBn8FkikhJp0fMnOKfYjT94xIjNSZqA/viewform'
   },
   {
     id: 3,
