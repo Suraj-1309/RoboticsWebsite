@@ -62,11 +62,6 @@ export default function UpComingEventFakeRoute({
       icon: <Calendar className="w-5 h-5 text-cyan-400" />,
     },
     {
-      title: "Time",
-      text: event.time || "Yet to be announced",
-      icon: <Clock className="w-5 h-5 text-violet-400" />,
-    },
-    {
       title: "Location",
       text: event.location || "Venue not announced",
       icon: <MapPin className="w-5 h-5 text-emerald-400" />,
@@ -173,19 +168,6 @@ export default function UpComingEventFakeRoute({
                 </div>
               </div>
 
-              {event.time && (
-                <div className="flex items-start gap-3">
-                  <Clock className="w-4 h-4 mt-0.5 text-accent" />
-
-                  <div>
-                    <p className="text-xs text-muted-foreground">Time</p>
-                    <p className="text-sm font-medium text-foreground">
-                      {event.time}
-                    </p>
-                  </div>
-                </div>
-              )}
-
               {event.location && (
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 mt-0.5 text-tech-green" />
@@ -272,17 +254,7 @@ export default function UpComingEventFakeRoute({
                       </p>
                     </div>
                   </div>
-                  {event.time && (
-                    <div className="flex items-center gap-3">
-                      <Clock className="w-5 h-5 text-accent" />
-                      <div>
-                        <p className="text-xs text-muted-foreground">Time</p>
-                        <p className="font-semibold text-foreground">
-                          {event.time}
-                        </p>
-                      </div>
-                    </div>
-                  )}
+                  
                   {event.location && (
                     <div className="flex items-center gap-3">
                       <MapPin className="w-5 h-5 text-tech-green" />
