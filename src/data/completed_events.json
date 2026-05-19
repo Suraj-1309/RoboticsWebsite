@@ -1,5 +1,31 @@
 [
   {
+    "id": 7,
+    "title": "Laser Tag 2026",
+    "date": "2026-05-18",
+    "time": "Yet to be announced",
+    "location": "NCT WAITING AREA",
+    "description": "A high-intensity laser tag showdown where strategy, reflexes, and precision decide the ultimate champion!",
+    "category": "Competition",
+    "participants": "20+ Participants",
+    "image": "https://res.cloudinary.com/dw7ck0xbj/image/upload/v1778473158/laser_tag_xcaqrb.webp",
+    "gradient": "from-accent to-tech-purple",
+    "status": "Completed"
+  },
+  {
+    "id": 6,
+    "title": "TrailBlazer 2026",
+    "date": "2026-05-18",
+    "time": "Yet to be announced",
+    "location": "NCT WAITING AREA",
+    "description": "A fast-paced line-following bot competition where precision, speed, and smart design lead the way to victory!",
+    "category": "Competition",
+    "participants": "10+ Teams",
+    "image": "https://res.cloudinary.com/dw7ck0xbj/image/upload/v1778473159/trail_blazer_qk2wi8.webp",
+    "gradient": "from-accent to-tech-purple",
+    "status": "Completed"
+  },
+  {
     "id": 5,
     "title": "Inbotics 2025",
     "date": "2025-11-25",

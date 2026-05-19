@@ -1,36 +1,9 @@
 [
-  {
-    "id": 2,
-    "title": "Laser Tag 2026",
-    "date": "2026-05-18",
-    "time": "Yet to be announced",
-    "location": "NCT WAITING AREA",
-    "description": "A high-intensity laser tag showdown where strategy, reflexes, and precision decide the ultimate champion!",
-   "longDescription": "Think you have the fastest trigger finger in Pantnagar? It’s time to prove it! The Robotics Club, Pantnagar is bringing the heat with a Laser Tag face-off, the ultimate tactical sub-event of Ranbhoomi. Step into the arena, dodge the beams, and let the LDRs decide your fate. It’s you versus your opponent in a high-stakes duel where only one emerges victorious. Navigate through obstacles, outsmart your rival, and land the winning shot in this thrilling test of speed, precision, and strategy.",
-    "category": "Competition",
-    "participants": "100+ Teams",
-    "image": "https://res.cloudinary.com/dw7ck0xbj/image/upload/v1778473158/laser_tag_xcaqrb.webp",
-    "gradient": "from-accent to-tech-purple",
-    "registrationLink": "https://forms.gle/Mfp2ntQNwzprT5V57"
-  },
-  {
-    "id": 3,
-    "title": "TrailBlazer 2026",
-    "date": "2026-05-18",
-    "time": "Yet to be announced",
-    "location": "NCT WAITING AREA",
-    "description": "A fast-paced line-following bot competition where precision, speed, and smart design lead the way to victory!",
-    "longDescription": "The Robotics Club, Pantnagar presents TRAILBLAZER — an exciting line-following bot competition where innovation meets speed and precision. Design, build, and program your autonomous bot to navigate challenging tracks as fast and accurately as possible while competing against fellow robotics enthusiasts for ultimate bragging rights. Whether you are experienced in robotics or trying something new, TRAILBLAZER offers the perfect opportunity to explore automation, showcase your engineering skills, and experience the thrill of competitive robotics in a fun and innovative environment.",
-    "category": "Competition",
-    "participants": "100+ Teams",
-    "image": "https://res.cloudinary.com/dw7ck0xbj/image/upload/v1778473159/trail_blazer_qk2wi8.webp",
-    "gradient": "from-accent to-tech-purple",
-    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSd_B6KQJKR_O1HkYLZbbD7LXRPkV3ENeX-g8LTNzxvWh1CoVA/viewform"
-  },
+  
   {
     "id": 1,
     "title": "Bare Bone Bots 2026",
-    "date": "2026-05-18",
+    "date": "",
     "time": "Yet to be announced",
     "location": "NCT WAITING AREA",
     "description": "A minimalistic bot-making competition where your creativity matters more than expensive hardware!",

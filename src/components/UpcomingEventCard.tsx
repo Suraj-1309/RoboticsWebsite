@@ -68,17 +68,10 @@ export default function UpcomingEventCard({ event }: EventProps) {
               </p>
             </div>
 
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 text-sm">
-                <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-foreground font-medium">
-                  {formatDate(event.date)}
-                </span>
-              </div>
-              <div className="flex items-center gap-3 text-sm">
-                <MapPin className="w-4 h-4 text-tech-green" />
-                <span className="text-muted-foreground">{event.location}</span>
-              </div>
+            <div className="flex items-center justify-center">
+              <span className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Coming Soon
+              </span>
             </div>
 
             <div className="pt-4 border-t border-border">
