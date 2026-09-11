@@ -1,122 +1,114 @@
 [
   {
     "position": "Chairperson",
-    "name": "Aditya Kapruwan",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/AdityaSir.webp",
-    "instagram": "@aaditya_kapruwan",
-    "gradient": "from-primary to-accent"
-  },
-  {
-    "position": "Vice Chairperson",
-    "name": "Keshav Gairola",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/KeshavSir.webp",
-    "instagram": "@keshavsays08",
+    "name": "Kushagra Petwal",
+    "batch": "2023-2027",
+    "image": "/teams/KushagraPetwal.jpeg",
+    "instagram": "",
     "gradient": "from-accent to-tech-purple"
   },
   {
     "position": "Vice Chairperson",
-    "name": "Devanshi Shukla",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/DevanshiMam.webp",
-    "instagram": "@gold_en_snitch",
+    "name": "Deepanshu Pargain",
+    "batch": "2023-2027",
+    "image": "/teams/DeepanshuPargain.jpeg",
+    "instagram": "",
+    "gradient": "from-accent to-tech-purple"
+  },
+  {
+    "position": "Vice Chairperson",
+    "name": "Ananya Bhatt",
+    "batch": "2023-2027",
+    "image": "/teams/AnanyaBhatt.jpeg",
+    "instagram": "",
     "gradient": "from-accent to-tech-purple"
   },
   {
     "position": "Treasurer",
-    "name": "Chetan Mandal",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/ChetanSir.webp",
-    "instagram": "@_im_chetan_k",
+    "name": "Ayush Jhakmola",
+    "batch": "2023-2027",
+    "image": "/teams/AyushJhakmola.jpeg",
+    "instagram": "",
     "gradient": "from-tech-green to-primary"
   },
   {
     "position": "Treasurer",
-    "name": "Shruti Chauchan",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/ShrutiMam.webp",
-    "instagram": "@shruti._.cha._.han",
+    "name": "Shruti Uniyal",
+    "batch": "2023-2027",
+    "image": "/teams/ShrutiUniyal.jpeg",
+    "instagram": "",
     "gradient": "from-tech-green to-primary"
   },
   {
+    "position": "Creative Head",
+    "name": "Aaryan Vaiswal",
+    "batch": "2023-2027",
+    "image": "/teams/AaryanVaiswal.jpeg",
+    "instagram": "",
+    "gradient": "from-tech-orange to-tech-purple"
+  },
+  {
     "position": "Technical Head",
-    "name": "Devjoyti Mondal",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/DevjoytiSir.webp",
-    "instagram": "@rishi_the_programmer",
+    "name": "Ankit Negi",
+    "batch": "2023-2027",
+    "image": "/teams/AnkitNegi.jpeg",
+    "instagram": "",
     "gradient": "from-tech-orange to-tech-green"
   },
   {
     "position": "Technical Head",
-    "name": "Nikita Kulyal",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/NikitaMam.webp",
-    "instagram": "@_nikitaaa.k_",
-    "gradient": "from-tech-orange to-tech-green"
-  },
-  {
-    "position": "Technical Head",
-    "name": "Shivang Raturi",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/ShivangSir.webp",
-    "instagram": "@shivangraturi.rs",
-    "gradient": "from-tech-orange to-tech-green"
-  },
-  {
-    "position": "Technical Head",
-    "name": "Khushi Shah",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/KhushiMam.webp",
-    "instagram": "@",
+    "name": "Akanksha Sharma",
+    "batch": "2023-2027",
+    "image": "/teams/AkankshaSharma.jpeg",
+    "instagram": "",
     "gradient": "from-tech-orange to-tech-green"
   },
   {
     "position": "Coding Head",
-    "name": "Manish Mehra",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/ManishSir.webp",
-    "instagram": "@manish__mehra__",
+    "name": "Kshitiz Srivastava",
+    "batch": "2023-2027",
+    "image": "/teams/KshitizSrivastava.jpeg",
+    "instagram": "",
     "gradient": "from-primary to-tech-orange"
   },
   {
     "position": "Coding Head",
-    "name": "Aastha Singh",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/AasthaMam.webp",
-    "instagram": "@aashii._.s",
+    "name": "Isha Joshi",
+    "batch": "2023-2027",
+    "image": "/teams/IshaJoshi.jpeg",
+    "instagram": "",
     "gradient": "from-primary to-tech-orange"
   },
   {
     "position": "Logistics Head",
-    "name": "Aryan Yadav",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/AryanSir.webp",
-    "instagram": "@aryan_yadav018",
+    "name": "Pranjala Bisht",
+    "batch": "2023-2027",
+    "image": "/teams/PranjalaBisht.jpeg",
+    "instagram": "",
     "gradient": "from-tech-purple to-primary"
   },
   {
     "position": "Logistics Head",
-    "name": "Priyanshi Kunwar",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/PriyanshiMam.webp",
-    "instagram": "@_priyanshi.kunwar_",
+    "name": "Rakshak Kumar",
+    "batch": "2023-2027",
+    "image": "/teams/RakshakKumar.jpeg",
+    "instagram": "",
     "gradient": "from-tech-purple to-primary"
   },
   {
     "position": "Social Media Head",
-    "name": "Aradhya",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/AradhyaSir.webp",
-    "instagram": "@",
+    "name": "Devansh Saini",
+    "batch": "2023-2027",
+    "image": "/teams/DevanshSaini.jpeg",
+    "instagram": "",
     "gradient": "from-accent to-tech-green"
   },
   {
     "position": "Social Media Head",
-    "name": "Harsh Sharma",
-    "batch": "2022-2026",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/teams/HarshSir.webp",
-    "instagram": "@harshhhhh__17",
+    "name": "Anshika Goyal",
+    "batch": "2023-2027",
+    "image": "/teams/AnshikaGoyal.jpeg",
+    "instagram": "",
     "gradient": "from-accent to-tech-green"
   }
 ]
