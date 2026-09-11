@@ -84,7 +84,7 @@
     "description": "Intensive 5-day bootcamp covering Arduino programming and hardware interfacing.",
     "category": "Workshop",
     "participants": "120+ Visitors",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Inbotics2025.webp",
+    "image": "/events/Inbotics2025.jpg",
     "gradient": "from-tech-purple to-accent",
     "status": "Completed"
   },
@@ -97,7 +97,7 @@
     "description": "Interview the new candidate to participate into The Robotics Club.",
     "category": "Induction",
     "participants": "50+ Candidates",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Induction2024.webp",
+    "image": "/events/Induction2024.png",
     "gradient": "from-tech-green to-primary",
     "status": "Completed"
   },
@@ -110,7 +110,7 @@
     "description": "Cultural event.",
     "category": "Competition",
     "participants": "20+ Teams",
-    "image": "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Ranbhoomi2024.webp",
+    "image": "/events/Ranbhoomi2024.png",
     "gradient": "from-primary to-tech-orange",
     "status": "Completed"
   }
