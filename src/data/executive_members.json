@@ -2,8 +2,8 @@
   { "name": "Anusha Tyagi", "branch": "ee", "image": "/teams/AnushaTyagi.jpeg"},
   { "name": "Anushka Negi", "branch": "elcom", "image": "/teams/AnushkaNegi.jpeg" },
   { "name": "Himang Raturi", "branch": "mech" },
-  { "name": "Krishna Verma", "branch": "it" },
   { "name": "Khwaish", "branch": "cse", "image": "/teams/Khwaish.jpeg" },
+  { "name": "Krishna Verma", "branch": "it" },
   { "name": "Monaal Bisht", "branch": "elcom" },
   { "name": "Pragya Semalti", "branch": "elcom", "image": "/teams/PragyaSemalti.jpeg" },
   { "name": "Pranjal Gairola", "branch": "cse", "image": "/teams/PranjalGairola.jpeg" },
@@ -12,6 +12,6 @@
   { "name": "Shreya Bahuguna", "branch": "ee", "image": "/teams/ShreyaBahuguna.jpeg" },
   { "name": "Suraj Singh Chauhan", "branch": "cse" },
   { "name": "Vaibhav Nargwani", "branch": "cse" },
-  { "name": "Vaishnavi Sah", "branch": "cse" },
+  { "name": "Vaishnavi Sah", "branch": "cse", "image": "/teams/VaishnaviSah.jpeg" },
   { "name": "Vivek Dhingra", "branch": "ipe" }
 ]
