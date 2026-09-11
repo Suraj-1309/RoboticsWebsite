@@ -112,14 +112,16 @@ export default function UpComingEventFakeRoute({
           {event.title}
         </h2>
 
-        <a
-          href={event.registrationLink || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden sm:inline-flex items-center justify-center px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold btn-accent rounded-full"
-        >
-          Register
-        </a>
+{event.registrationLink && (
+  <a
+    href={event.registrationLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hidden sm:inline-flex items-center justify-center px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold btn-accent rounded-full"
+  >
+    Register
+  </a>
+)}
       </div>
 
       {/* MAIN CONTENT */}
