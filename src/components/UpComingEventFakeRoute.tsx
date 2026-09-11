@@ -61,6 +61,12 @@ export default function UpComingEventFakeRoute({
     return endDate ? `${start} - ${formatDate(endDate)}` : start;
   };
 
+  // Drive links need /preview form to embed; local PDFs pass through untouched
+  const resumePreviewUrl = event.resumeFormatLink?.replace(
+    /\/view(\?.*)?$/,
+    "/preview"
+  );
+
   if (!open || !event) return null;
 
   const sections = [
@@ -106,14 +112,16 @@ export default function UpComingEventFakeRoute({
           {event.title}
         </h2>
 
-        <a
-          href={event.registrationLink || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden sm:inline-flex items-center justify-center px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold btn-accent rounded-full"
-        >
-          Register
-        </a>
+{event.registrationLink && (
+  <a
+    href={event.registrationLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hidden sm:inline-flex items-center justify-center px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold btn-accent rounded-full"
+  >
+    Register
+  </a>
+)}
       </div>
 
       {/* MAIN CONTENT */}
@@ -227,33 +235,57 @@ export default function UpComingEventFakeRoute({
               </div>
             )}
 
+            {resumePreviewUrl && (
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                  Resume Format
+                </p>
+                <iframe
+                  src={resumePreviewUrl}
+                  title="Resume format preview"
+                  className="w-full h-[40vh] rounded-xl border border-border/50"
+                  loading="lazy"
+                />
+              </div>
+            )}
+
             {/* Buttons */}
             <div className="pt-4 border-t border-border">
-              {event.registrationLink ? (
-                <a
-                  href={event.registrationLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="w-full block btn-hero text-sm py-2 text-center"
-                >
-                  Register Now
-                </a>
-              ) : event.resumeFormatLink ? (
-                <a
-                  href={event.resumeFormatLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="w-full block btn-hero text-sm py-2 text-center"
-                >
-                  Handwritten Resume - View Format
-                </a>
-              ) : (
-                <span className="block text-center text-sm text-muted-foreground">
-                  Registration details coming soon
-                </span>
-              )}
+              <div
+                className={`grid gap-3 ${
+                  event.registrationLink && event.resumeFormatLink
+                    ? "grid-cols-1 sm:grid-cols-2"
+                    : "grid-cols-1"
+                }`}
+              >
+                {event.registrationLink && (
+                  <a
+                    href={event.registrationLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="w-full block btn-hero text-sm py-2 text-center"
+                  >
+                    Register Now
+                  </a>
+                )}
+                {event.resumeFormatLink && (
+                  <a
+                    href={event.resumeFormatLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="w-full block btn-accent text-sm py-2 text-center rounded-full"
+                  >
+                    Handwritten Resume - View Format
+                  </a>
+                )}
+                {!event.registrationLink && !event.resumeFormatLink && (
+                  <span className="block text-center text-sm text-muted-foreground">
+                    Registration details coming soon
+                  </span>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -350,33 +382,57 @@ export default function UpComingEventFakeRoute({
                   </div>
                 )}
 
+                {resumePreviewUrl && (
+                  <div className="space-y-2">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                      Resume Format
+                    </p>
+                    <iframe
+                      src={resumePreviewUrl}
+                      title="Resume format preview"
+                      className="w-full h-[50vh] rounded-xl border border-border/50"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+
                 {/* Buttons */}
                 <div className="pt-4 border-t border-border">
-                  {event.registrationLink ? (
-                    <a
-                      href={event.registrationLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="w-full block btn-hero text-sm py-2 text-center"
-                    >
-                      Register Now
-                    </a>
-                  ) : event.resumeFormatLink ? (
-                    <a
-                      href={event.resumeFormatLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="w-full block btn-hero text-sm py-2 text-center"
-                    >
-                      Handwritten Resume - View Format
-                    </a>
-                  ) : (
-                    <span className="block text-center text-sm text-muted-foreground">
-                      Registration details coming soon
-                    </span>
-                  )}
+                  <div
+                    className={`grid gap-3 ${
+                      event.registrationLink && event.resumeFormatLink
+                        ? "grid-cols-1 sm:grid-cols-2"
+                        : "grid-cols-1"
+                    }`}
+                  >
+                    {event.registrationLink && (
+                      <a
+                        href={event.registrationLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="w-full block btn-hero text-sm py-2 text-center"
+                      >
+                        Register Now
+                      </a>
+                    )}
+                    {event.resumeFormatLink && (
+                      <a
+                        href={event.resumeFormatLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="w-full block btn-accent text-sm py-2 text-center rounded-full"
+                      >
+                        Handwritten Resume - View Format
+                      </a>
+                    )}
+                    {!event.registrationLink && !event.resumeFormatLink && (
+                      <span className="block text-center text-sm text-muted-foreground">
+                        Registration details coming soon
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
 
