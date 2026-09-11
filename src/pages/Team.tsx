@@ -81,14 +81,12 @@ const Team = () => {
                 key={`${member.name}-${index}`}
                 className="card-tech p-5 text-center hover:scale-105 transition-all duration-500"
               >
-                {member.image && (
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-20 h-20 mx-auto rounded-full object-cover mb-3"
-                    loading="lazy"
-                  />
-                )}
+                <img
+                  src={member.image || "/profile_placeholder.jpg"}
+                  alt={member.name}
+                  className="w-20 h-20 mx-auto rounded-full object-cover mb-3"
+                  loading="lazy"
+                />
                 <h3 className="font-semibold text-foreground text-sm sm:text-base leading-snug">
                   {member.name}
                 </h3>
