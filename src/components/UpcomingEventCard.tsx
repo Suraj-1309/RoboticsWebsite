@@ -86,16 +86,6 @@ export default function UpcomingEventCard({ event }: EventProps) {
                 >
                   Register Now
                 </a>
-              ) : event.resumeFormatLink ? (
-                <a
-                  href={event.resumeFormatLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="w-full block btn-hero text-sm py-2 text-center"
-                >
-                  Handwritten Resume - View Format
-                </a>
               ) : (
                 <span className="block text-center text-sm text-muted-foreground">
                   Registration details coming soon
