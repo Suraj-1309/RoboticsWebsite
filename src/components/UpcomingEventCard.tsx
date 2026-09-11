@@ -15,6 +15,7 @@ interface EventProps {
     image: string;
     gradient: string;
     registrationLink?: string;
+    resumeFormatLink?: string;
   };
 }
 
@@ -38,7 +39,7 @@ export default function UpcomingEventCard({ event }: EventProps) {
           onClick={() => setOpen(true)}
           className="card-tech hover:scale-[1.02] transition-all duration-500 overflow-hidden cursor-pointer"
         >
-          <div className="relative h-48 overflow-hidden rounded-t-2xl">
+          <div className="relative h-48 lg:h-64 overflow-hidden rounded-t-2xl">
             <img
               src={event.image}
               alt={event.title}
@@ -63,15 +64,15 @@ export default function UpcomingEventCard({ event }: EventProps) {
               <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                 {event.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-sm leading-relaxed text-justify">
                 {event.description}
               </p>
             </div>
 
-            <div className="flex items-center justify-center">
-              <span className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Coming Soon
-              </span>
+            <div className="space-y-2 text-center">
+              <p className="text-sm font-semibold text-foreground">
+                Handwritten resume required
+              </p>
             </div>
 
             <div className="pt-4 border-t border-border">
@@ -85,14 +86,20 @@ export default function UpcomingEventCard({ event }: EventProps) {
                 >
                   Register Now
                 </a>
-              ) : (
-                <button
+              ) : event.resumeFormatLink ? (
+                <a
+                  href={event.resumeFormatLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="w-full btn-hero text-sm py-2 cursor-not-allowed opacity-50"
-                  disabled
+                  className="w-full block btn-hero text-sm py-2 text-center"
                 >
-                  Registration Closed
-                </button>
+                  Handwritten Resume - View Format
+                </a>
+              ) : (
+                <span className="block text-center text-sm text-muted-foreground">
+                  Registration details coming soon
+                </span>
               )}
             </div>
           </div>

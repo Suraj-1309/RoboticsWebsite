@@ -14,6 +14,7 @@ interface Event {
   id: number;
   title: string;
   date: string;
+  endDate?: string;
   time?: string;
   location?: string;
   description?: string;
@@ -24,7 +25,9 @@ interface Event {
   images?: string[];
   gradient?: string;
   registrationLink?: string;
+  resumeFormatLink?: string;
   rules?: string[];
+  contacts?: { name: string; phone: string }[];
 }
 
 export default function UpComingEventFakeRoute({
@@ -53,13 +56,23 @@ export default function UpComingEventFakeRoute({
     });
   };
 
+  const formatDateRange = (startDate?: string, endDate?: string) => {
+    const start = formatDate(startDate);
+    return endDate ? `${start} - ${formatDate(endDate)}` : start;
+  };
+
   if (!open || !event) return null;
 
   const sections = [
     {
       title: "Date",
-      text: formatDate(event.date),
+      text: formatDateRange(event.date, event.endDate),
       icon: <Calendar className="w-5 h-5 text-cyan-400" />,
+    },
+    {
+      title: "Time",
+      text: event.time || "Yet to be announced",
+      icon: <Clock className="w-5 h-5 text-violet-400" />,
     },
     {
       title: "Location",
@@ -130,7 +143,7 @@ export default function UpComingEventFakeRoute({
               </h1>
 
               {(event.longDescription || event.description) && (
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                   {event.longDescription || event.description}
                 </p>
               )}
@@ -145,7 +158,7 @@ export default function UpComingEventFakeRoute({
                   {event.rules.map((rule, index) => (
                     <li
                       key={index}
-                      className="flex items-start gap-3 text-sm text-foreground/90"
+                      className="flex items-start gap-3 text-sm text-foreground/90 text-justify"
                     >
                       <span className="mt-1 h-2 w-2 rounded-full bg-primary shrink-0" />
                       <span className="leading-relaxed">{rule}</span>
@@ -163,10 +176,23 @@ export default function UpComingEventFakeRoute({
                 <div>
                   <p className="text-xs text-muted-foreground">Date</p>
                   <p className="text-sm font-medium text-foreground">
-                    {formatDate(event.date)}
+                    {formatDateRange(event.date, event.endDate)}
                   </p>
                 </div>
               </div>
+
+              {event.time && (
+                <div className="flex items-start gap-3">
+                  <Clock className="w-4 h-4 mt-0.5 text-accent" />
+
+                  <div>
+                    <p className="text-xs text-muted-foreground">Time</p>
+                    <p className="text-sm font-medium text-foreground">
+                      {event.time}
+                    </p>
+                  </div>
+                </div>
+              )}
 
               {event.location && (
                 <div className="flex items-start gap-3">
@@ -182,6 +208,25 @@ export default function UpComingEventFakeRoute({
               )}
             </div>
 
+            {event.contacts && event.contacts.length > 0 && (
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                  Contact
+                </p>
+                <div className="space-y-2">
+                  {event.contacts.map((contact) => (
+                    <a
+                      key={contact.phone}
+                      href={`tel:${contact.phone}`}
+                      className="block text-sm text-foreground hover:text-primary transition-colors"
+                    >
+                      {contact.name}: {contact.phone}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Buttons */}
             <div className="pt-4 border-t border-border">
               {event.registrationLink ? (
@@ -194,14 +239,20 @@ export default function UpComingEventFakeRoute({
                 >
                   Register Now
                 </a>
-              ) : (
-                <button
+              ) : event.resumeFormatLink ? (
+                <a
+                  href={event.resumeFormatLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="w-full btn-hero text-sm py-2 cursor-not-allowed opacity-50"
-                  disabled
+                  className="w-full block btn-hero text-sm py-2 text-center"
                 >
-                  Registration Closed
-                </button>
+                  Handwritten Resume - View Format
+                </a>
+              ) : (
+                <span className="block text-center text-sm text-muted-foreground">
+                  Registration details coming soon
+                </span>
               )}
             </div>
           </div>
@@ -218,7 +269,7 @@ export default function UpComingEventFakeRoute({
                     {event.title}
                   </h1>
                   {(event.longDescription || event.description) && (
-                    <p className="text-base text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed text-justify">
                       {event.longDescription || event.description}
                     </p>
                   )}
@@ -233,7 +284,7 @@ export default function UpComingEventFakeRoute({
                       {event.rules.map((rule, index) => (
                         <li
                           key={index}
-                          className="flex items-start gap-3 text-sm text-foreground/90"
+                          className="flex items-start gap-3 text-sm text-foreground/90 text-justify"
                         >
                           <span className="mt-1 h-2 w-2 rounded-full bg-primary shrink-0" />
                           <span className="leading-relaxed">{rule}</span>
@@ -250,11 +301,21 @@ export default function UpComingEventFakeRoute({
                     <div>
                       <p className="text-xs text-muted-foreground">Date</p>
                       <p className="font-semibold text-foreground">
-                        {formatDate(event.date)}
+                        {formatDateRange(event.date, event.endDate)}
                       </p>
                     </div>
                   </div>
-                  
+                  {event.time && (
+                    <div className="flex items-center gap-3">
+                      <Clock className="w-5 h-5 text-accent" />
+                      <div>
+                        <p className="text-xs text-muted-foreground">Time</p>
+                        <p className="font-semibold text-foreground">
+                          {event.time}
+                        </p>
+                      </div>
+                    </div>
+                  )}
                   {event.location && (
                     <div className="flex items-center gap-3">
                       <MapPin className="w-5 h-5 text-tech-green" />
@@ -270,6 +331,25 @@ export default function UpComingEventFakeRoute({
                   )}
                 </div>
 
+                {event.contacts && event.contacts.length > 0 && (
+                  <div className="space-y-2">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                      Contact
+                    </p>
+                    <div className="space-y-2">
+                      {event.contacts.map((contact) => (
+                        <a
+                          key={contact.phone}
+                          href={`tel:${contact.phone}`}
+                          className="block text-sm text-foreground hover:text-primary transition-colors"
+                        >
+                          {contact.name}: {contact.phone}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 {/* Buttons */}
                 <div className="pt-4 border-t border-border">
                   {event.registrationLink ? (
@@ -282,25 +362,31 @@ export default function UpComingEventFakeRoute({
                     >
                       Register Now
                     </a>
-                  ) : (
-                    <button
+                  ) : event.resumeFormatLink ? (
+                    <a
+                      href={event.resumeFormatLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="w-full btn-hero text-sm py-2 cursor-not-allowed opacity-50"
-                      disabled
+                      className="w-full block btn-hero text-sm py-2 text-center"
                     >
-                      Registration Closed
-                    </button>
+                      Handwritten Resume - View Format
+                    </a>
+                  ) : (
+                    <span className="block text-center text-sm text-muted-foreground">
+                      Registration details coming soon
+                    </span>
                   )}
                 </div>
               </div>
 
               {/* Right Image */}
               {event.image && (
-                <div className="col-span-3 flex items-center justify-center">
+                <div className="col-span-3 min-h-[32rem] flex items-center justify-center sticky top-6 self-start">
                   <img
                     src={event.image}
                     alt={event.title}
-                    className="w-full max-h-96 object-contain rounded-xl shadow-2xl hover:shadow-3xl transition-shadow duration-300"
+                    className="w-full h-full max-h-[70vh] object-contain rounded-xl shadow-2xl hover:shadow-3xl transition-shadow duration-300"
                   />
                 </div>
               )}
