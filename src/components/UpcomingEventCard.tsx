@@ -7,6 +7,7 @@ interface EventProps {
     id: number;
     title: string;
     date: string;
+    endDate?: string;
     time: string;
     location: string;
     description: string;
@@ -16,6 +17,8 @@ interface EventProps {
     gradient: string;
     registrationLink?: string;
     resumeFormatLink?: string;
+    rulesTitle?: string;
+    rules?: string[];
   };
 }
 
@@ -69,11 +72,19 @@ export default function UpcomingEventCard({ event }: EventProps) {
               </p>
             </div>
 
-            <div className="space-y-2 text-center">
-              <p className="text-sm font-semibold text-foreground">
-                Handwritten resume required
-              </p>
-            </div>
+            {event.resumeFormatLink ? (
+              <div className="space-y-2 text-center">
+                <p className="text-sm font-semibold text-foreground">
+                  Handwritten resume required
+                </p>
+              </div>
+            ) : event.participants ? (
+              <div className="space-y-2 text-center">
+                <p className="text-sm font-semibold text-foreground">
+                  {event.participants}
+                </p>
+              </div>
+            ) : null}
 
             <div className="pt-4 border-t border-border">
               {event.registrationLink ? (

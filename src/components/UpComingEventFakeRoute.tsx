@@ -26,6 +26,7 @@ interface Event {
   gradient?: string;
   registrationLink?: string;
   resumeFormatLink?: string;
+  rulesTitle?: string;
   rules?: string[];
   contacts?: { name: string; phone: string }[];
 }
@@ -160,7 +161,7 @@ export default function UpComingEventFakeRoute({
             {event.rules && event.rules.length > 0 && (
               <div className="space-y-2">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                  Rules
+                  {event.rulesTitle || (event.category === "Workshop" ? "Key Highlights & Perks" : "Rules")}
                 </p>
                 <ul className="space-y-2">
                   {event.rules.map((rule, index) => (
@@ -310,7 +311,7 @@ export default function UpComingEventFakeRoute({
                 {event.rules && event.rules.length > 0 && (
                   <div className="space-y-2 pt-2">
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                      Rules
+                      {event.rulesTitle || (event.category === "Workshop" ? "Key Highlights & Perks" : "Rules")}
                     </p>
                     <ul className="space-y-2">
                       {event.rules.map((rule, index) => (

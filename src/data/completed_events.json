@@ -1,5 +1,18 @@
 [
   {
+    "id": 8,
+    "title": "Inductions for Sophomores",
+    "date": "2026-09-14",
+    "time": "03:00 PM - 05:00 PM",
+    "location": "201B & 200AB, NCT",
+    "description": "An induction event for sophomores seeking selection into The Robotics Club Pantnagar and an opportunity to learn about the club's robotics activities.",
+    "category": "Induction",
+    "participants": "Sophomores",
+    "image": "https://res.cloudinary.com/dw7ck0xbj/image/upload/v1789058730/induction_2026_mt7oyi.png",
+    "gradient": "from-accent to-tech-purple",
+    "status": "Completed"
+  },
+  {
     "id": 1,
     "title": "Bare Bone Bots 2026",
     "date": "",

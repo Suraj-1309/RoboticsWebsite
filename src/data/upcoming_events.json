@@ -1,38 +1,27 @@
 [
   {
     "id": 1,
-    "title": "Inductions for Sophomores",
-    "date": "2026-09-14",
-    "endDate": "2026-09-16",
-    "time": "03:00 PM - 05:00 PM",
-    "location": "201B & 200AB, NCT",
-    "description": "An induction event for sophomores seeking selection into The Robotics Club Pantnagar and an opportunity to learn about the club's robotics activities.",
-    "longDescription": "Inductions for Sophomores is the selection event for students who want to join The Robotics Club Pantnagar. It introduces candidates to the club's vision, members, technical projects, events, and opportunities to contribute to its robotics activities.",
-    "category": "Induction",
-    "participants": "Sophomores",
-    "image": "https://res.cloudinary.com/dw7ck0xbj/image/upload/v1789058730/induction_2026_mt7oyi.png",
+    "title": "INBOTICS 2026: 5-Day Hands-on Robotics Workshop",
+    "date": "2026-11-18",
+    "endDate": "2026-11-22",
+    "time": "3:00 PM – 5:00 PM Daily",
+    "location": "114 BN Hall, College of Technology",
+    "description": "A 5-day immersive, practical workshop designed to take you from the fundamentals of electronics and microcontrollers to deploying code on real hardware. Build your own bot from scratch!",
+    "longDescription": "Ever wondered how robots actually work and how code brings machines to life? Here’s your chance to find out! The Robotics Club brings you INBOTICS 2026—a 5-day immersive, practical workshop designed to take you from the fundamentals of electronics and microcontrollers to deploying code on real hardware. Skip the boring theory and dive straight into building your own functioning robot with direct mentorship!",
+    "category": "Workshop",
+    "participants": "All 1st-year students (Any college, any branch)",
+    "image": "/events/inbotics2026.jpg",
     "gradient": "from-accent to-tech-purple",
-    "registrationLink": "https://forms.gle/xt46NzLAnCyWeQGg6",
-    "resumeFormatLink": "https://drive.google.com/file/d/1LtppnJNEyMJ51ifPG5V48M4fZKkg6Up0/view?usp=sharing",
-    "contacts": [
-      {
-        "name": "Anusha Tyagi",
-        "phone": "9667204478"
-      },
-      {
-        "name": "Pranjal Gairola",
-        "phone": "9520797300"
-      }
-    ],
+    "registrationLink": "https://forms.gle/MHr5Ydsq8csZz5Az7",
+    "rulesTitle": "Key Highlights & Perks",
     "rules": [
-      "The induction process will be conducted in two phases: an aptitude test followed by an interview.",
-      "Phase 1: The aptitude test will be conducted only on September 14, 2026, and will last approximately 30 to 45 minutes. The final duration will be announced separately.",
-      "The aptitude test is optional and is not required to participate in the interview; participants who take it may receive additional points.",
-      "Phase 2: Interviews will be conducted on September 15 and 16, 2026.",
-      "All participants may attend the interview, regardless of whether they took the aptitude test.",
-      "During the interview, a panel of judges will ask questions based on the candidate's resume and award points according to the quality of their answers.",
-      "Participants are expected to arrive on time for their scheduled session.",
-      "Please bring an up-to-date resume for the induction process."
+      "5 days of comprehensive, practical, hands-on learning.",
+      "Zero prerequisites: No prior coding, electronics, or robotics experience required.",
+      "Build your own bot from the ground up with guided club mentorship.",
+      "Free takeaway robotics kit worth ₹3,000 for participants.",
+      "Official participation certificate awarded to every attendee.",
+      "Top performers earn the opportunity to represent the university at a national-level tech fest.",
+      "Complete your registration via the official Google Form link before slots fill up."
     ]
   }
 ]
